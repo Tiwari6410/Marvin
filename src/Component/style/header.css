@@ -1,0 +1,39 @@
+
+
+.btn-header {
+    padding: 15px 20px; /* Adjusted padding for smaller screens */
+    border: 1px solid rgb(214, 212, 212);
+    border-radius: 30px;
+  }
+  .btn-header:hover{
+    cursor: pointer;
+  }
+  .header-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+    align-items: center;
+    margin: auto 20px;
+  }
+  
+  .header-menu {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+    align-items: center;
+    gap: 10px; /* Added gap between columns for better spacing */
+  }
+  
+  /* Media query for screens with a width of 768 pixels or more */
+  @media (min-width: 768px) {
+    .btn-header {
+      padding: 15px 40px; /* Restoring original padding for larger screens */
+    }
+  
+    .header-container {
+      grid-template-columns: repeat(2, 1fr); /* Two-column layout for larger screens */
+    }
+  
+    .header-menu {
+      grid-template-columns: repeat(3, 1fr); /* Three-column layout for larger screens */
+    }
+  }
+  
