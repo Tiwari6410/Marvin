@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .login-form {
+            width: 300px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #f7f7f7;
+            border-radius: 10px;
+        }
+
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .login-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+        }
+
+        .login-form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-form">
+        <h2>Welcome Back!</h2>
+        <p>We missed you! Please enter your details.</p>
+        <form>
+            <input type="text" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="checkbox"> Remember me
+            <a href="#">Forgot password?</a>
+            <input type="submit" value="Sign in">
+            <button>Sign in with Google</button>
+            <p>Don’t have an account? <a href="#">Sign up</a></p>
+        </form>
+    </div>
+</body>
+
+</html>
